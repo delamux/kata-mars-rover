@@ -1,8 +1,3 @@
-//Lo primero que vamos a implementar es el artefacto coordenadas
-//que va a ser un value object que va a tener dos atributos que siempre van juntos, la latitud y longitud
-// y que va a comprobar si está en el borde del planeta o no, si está en el borde del planeta lo rodea
-//no se permiten coordenadas negativas.
-
 import { Coordinates } from "../core/coordinates";
 
 describe('The Coordinates', () => {
