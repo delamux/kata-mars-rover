@@ -18,7 +18,7 @@ export class NavigatorFacingNorth  {
   }
 
   forward(): Navigator {
-    return new NavigatorFacingNorth(this.coordinates.increaseLongitude());
+    return new NavigatorFacingNorth(this.coordinates.increaseLatitude());
   }
 
   currentPosition(): Coordinates {
@@ -43,7 +43,7 @@ export class NavigatorFacingWest {
   }
 
   forward(): Navigator {
-    return new NavigatorFacingWest(this.coordinates.decreaseLatitude());
+    return new NavigatorFacingWest(this.coordinates.decreaseLongitude());
   }
 
   currentPosition(): Coordinates {
@@ -68,7 +68,7 @@ export class NavigatorFacingSouth {
   }
 
   forward(): Navigator {
-    return new NavigatorFacingSouth(this.coordinates.decreaseLongitude());
+    return new NavigatorFacingSouth(this.coordinates.decreaseLatitude());
   }
 
   currentPosition(): Coordinates {
@@ -93,7 +93,7 @@ export class NavigatorFacingEast {
   }
 
   forward(): Navigator {
-    return new NavigatorFacingEast(this.coordinates.increaseLatitude());
+    return new NavigatorFacingEast(this.coordinates.increaseLongitude());
   }
 
   currentPosition(): Coordinates {
